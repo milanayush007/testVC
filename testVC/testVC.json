@@ -1,16 +1,16 @@
 {
-  "jobMode" : "SCRIPT",
-  "description" : "",
-  "role" : "arn:aws:iam::998461587182:role/FullAccessGlueLambdaStatesRole",
-  "executionProperty" : {
+  "JobMode" : "SCRIPT",
+  "Description" : "",
+  "Role" : "arn:aws:iam::998461587182:role/FullAccessGlueLambdaStatesRole",
+  "ExecutionProperty" : {
     "maxConcurrentRuns" : 1
   },
-  "command" : {
+  "Command" : {
     "name" : "glueetl",
     "scriptLocation" : "s3://qr-dev-etl-s3/test_folder_version_control/glue-jobs/scripts/testVC.py",
     "pythonVersion" : "3"
   },
-  "defaultArguments" : {
+  "DefaultArguments" : {
     "--enable-metrics" : "true",
     "--enable-spark-ui" : "true",
     "--spark-event-logs-path" : "s3://qr-dev-etl-s3/test_folder_version_control/glue-jobs/sparkHistoryLogs/",
@@ -21,12 +21,12 @@
     "--job-language" : "python",
     "--TempDir" : "s3://qr-dev-etl-s3/test_folder_version_control/glue-jobs/temporary/"
   },
-  "maxRetries" : 0,
-  "allocatedCapacity" : 2,
-  "timeout" : 480,
-  "maxCapacity" : 2.0,
-  "glueVersion" : "5.0",
-  "numberOfWorkers" : 4,
-  "workerType" : "G.1X",
-  "executionClass" : "STANDARD"
+  "MaxRetries" : 0,
+  "AllocatedCapacity" : 2,
+  "Timeout" : 480,
+  "MaxCapacity" : 2.0,
+  "GlueVersion" : "5.0",
+  "NumberOfWorkers" : 4,
+  "WorkerType" : "G.1X",
+  "ExecutionClass" : "STANDARD"
 }
