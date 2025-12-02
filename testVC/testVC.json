@@ -22,7 +22,6 @@
     "--TempDir" : "s3://qr-dev-etl-s3/test_folder_version_control/glue-jobs/temporary/"
   },
   "MaxRetries" : 0,
-  "AllocatedCapacity" : 2,
   "Timeout" : 480,
   "GlueVersion" : "5.0",
   "NumberOfWorkers" : 4,
