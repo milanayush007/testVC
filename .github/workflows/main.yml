@@ -33,7 +33,7 @@ jobs:
             --repository-owner "milanayush007" \
             --branch-name "main" \
             --folder "testVC/" \
-            --authentication-strategy "PERSONAL_ACCESS_TOKEN" \
-            --authentication-token "${{ secrets.GITHUB_TOKEN }}" \
+            --auth-strategy "PERSONAL_ACCESS_TOKEN" \
+            --auth-token "${{ secrets.GITHUB_TOKEN }}" \
             --region "us-east-1" \
             --no-cli-pager
