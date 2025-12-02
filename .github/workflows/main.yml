@@ -27,4 +27,5 @@ jobs:
 
       - name: Update Glue Job Definition
         run: |
-          aws glue update-job job-name="testVC" job-update="testVC/testVC.json"
+          aws glue update-job --job-name testVC --job-update testVC/testVC.json
+          
