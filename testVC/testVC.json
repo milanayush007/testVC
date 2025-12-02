@@ -24,7 +24,6 @@
   "MaxRetries" : 0,
   "AllocatedCapacity" : 2,
   "Timeout" : 480,
-  "MaxCapacity" : 2.0,
   "GlueVersion" : "5.0",
   "NumberOfWorkers" : 4,
   "WorkerType" : "G.1X",
