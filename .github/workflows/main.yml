@@ -29,4 +29,4 @@ jobs:
         run: |
           aws glue update-job \
             --job-name "testVC" \
-            --job-update testVC/testVC.json
+            --job-update "testVC/testVC.json"
