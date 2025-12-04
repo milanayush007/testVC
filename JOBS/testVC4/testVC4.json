@@ -1,0 +1,39 @@
+{
+  "name" : "testVC4",
+  "jobMode" : "SCRIPT",
+  "description" : "",
+  "role" : "arn:aws:iam::998461587182:role/FullAccessGlueLambdaStatesRole",
+  "executionProperty" : {
+    "maxConcurrentRuns" : 1
+  },
+  "command" : {
+    "name" : "glueetl",
+    "scriptLocation" : "s3://qr-dev-etl-s3/test_folder_version_control/glue-jobs/scripts/testVC4.py",
+    "pythonVersion" : "3"
+  },
+  "defaultArguments" : {
+    "--enable-metrics" : "true",
+    "--enable-spark-ui" : "true",
+    "--spark-event-logs-path" : "s3://qr-dev-etl-s3/test_folder_version_control/glue-jobs/sparkHistoryLogs/",
+    "--enable-job-insights" : "true",
+    "--enable-observability-metrics" : "true",
+    "--enable-glue-datacatalog" : "true",
+    "--job-bookmark-option" : "job-bookmark-disable",
+    "--job-language" : "python",
+    "--TempDir" : "s3://qr-dev-etl-s3/test_folder_version_control/glue-jobs/temporary/"
+  },
+  "maxRetries" : 0,
+  "allocatedCapacity" : 6,
+  "timeout" : 480,
+  "maxCapacity" : 6.0,
+  "glueVersion" : "5.0",
+  "numberOfWorkers" : 6,
+  "workerType" : "G.1X",
+  "executionClass" : "STANDARD",
+  "sourceControlDetails" : {
+    "provider" : "GITHUB",
+    "repository" : "ETL-jobs",
+    "branch" : "main",
+    "folder" : "JOBS/testVC4"
+  }
+}
