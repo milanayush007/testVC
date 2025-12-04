@@ -1,5 +1,4 @@
 {
-  "name" : "testVC4",
   "jobMode" : "SCRIPT",
   "description" : "",
   "role" : "arn:aws:iam::998461587182:role/FullAccessGlueLambdaStatesRole",
@@ -29,11 +28,5 @@
   "glueVersion" : "5.0",
   "numberOfWorkers" : 6,
   "workerType" : "G.1X",
-  "executionClass" : "STANDARD",
-  "sourceControlDetails" : {
-    "provider" : "GITHUB",
-    "repository" : "ETL-jobs",
-    "branch" : "main",
-    "folder" : "JOBS/testVC4"
-  }
+  "executionClass" : "STANDARD"
 }
